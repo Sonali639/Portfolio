@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #fafafa; 
+}
+::selection {
+  color: rgb(255, 255, 255); /* Fixed typo, should be "grey" instead of "grey" */
+  background: #b7c2c2;
 }
 
 code {

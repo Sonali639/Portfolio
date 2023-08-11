@@ -12,7 +12,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import AboutSection from "./AboutSection";
+
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
@@ -20,6 +20,8 @@ const navItems = ["Home", "About", "Contact"];
 function Header(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -95,8 +97,6 @@ function Header(props) {
       </Box>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-
-        <AboutSection  />
       </Box>
     </Box>
   );
