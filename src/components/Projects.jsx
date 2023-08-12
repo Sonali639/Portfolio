@@ -19,12 +19,12 @@ function Projects() {
 
 
   return (
-    <Box sx={{ px: 5, py: 5 ,mx:3}}>
+    <Box sx={{ px: 5 ,mx:3}}>
       <Title Title={title} />
 
       <Box sx={{ px: 2 }}>
       {ProjectData.map((data, index) => (  
-        <Grid container spacing={2} sx={{alignItems:"Center"}} key={index}>
+        <Grid container spacing={2} sx={{ alignItems: "center", mt: index > 0 ? 5 : 0, pt: index > 0 ? 5 : 0  }}  direction={data.direction} key={index}>
           <Grid item xs={12} md={5}>
             <Item>
               <img src="" alt="" srcset={data.img} width="100%"/>
