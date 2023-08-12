@@ -9,7 +9,7 @@ const theme = createTheme({
       main: "#F50057",
     },
     attention:{
-        main:"#ff0000"
+        main:"#FCDE02"
     }
   },
   typography: {
@@ -35,7 +35,6 @@ h4:{
   fontSize: "34px",
     fontWeight: "400",
     lineHeight:" 1.5",
-    marginBottom: "1.5em",
     fontFamily: "Playfair Display, Georgia, serif",
     color: "#000"
 },

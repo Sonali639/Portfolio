@@ -8,6 +8,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import Title from "./Title";
 
 function Contact() {
   const contactInfo = [
@@ -22,26 +23,18 @@ function Contact() {
     },
   ];
 
+  const title=
+    {
+        backgroundTitle:"Contact",
+        miniTitle:"Contact",
+        mainTitle:"Contact Me"
+    }
+  
+
   return (
     <Box sx={{ py: 5, px:5 }}>
-      <Typography variant="h1">Contact</Typography>
-      <Box
-        sx={{
-          textAlign: "center",
-          position: "relative",
-          zIndex: 1,
-
-          top: "65px",
-        }}
-      >
-        <Typography variant="smallestText" gutterBottom>
-          Contact
-        </Typography>
-        <Typography variant="h4" gutterBottom>
-          Contact Me
-        </Typography>
-      </Box>
-      <Box sx={{ px: 2, paddingTop: "140px" }}>
+     <Title Title={title}/>
+      <Box sx={{ px: 2,  }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={5}>
             <Item>
